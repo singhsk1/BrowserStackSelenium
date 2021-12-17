@@ -1,5 +1,6 @@
 #Jenkins Run 
 mvn compile
+
 mvn test -P parallel
 
 Jenkins:
