@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Parallel]" parallel="tests">
+  <parameter name="environment" value="env3"/>
+  <parameter name="config" value="parallel.conf.json"/>
+  <test name="SingleTestEnv1">
+    <parameter name="environment" value="env1"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest"/>
+    </classes>
+  </test> <!-- SingleTestEnv1 -->
+  <test name="SingleTestEnv2">
+    <parameter name="environment" value="env2"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest"/>
+    </classes>
+  </test> <!-- SingleTestEnv2 -->
+  <test name="SingleTestEnv3">
+    <parameter name="environment" value="env3"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest"/>
+    </classes>
+  </test> <!-- SingleTestEnv3 -->
+</suite> <!-- Failed suite [Parallel] -->
